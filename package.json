@@ -1,6 +1,6 @@
 {
   "name": "basestorex",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A DDatabase factory that stores and replicates linked bases.",
   "main": "index.js",
   "scripts": {

@@ -333,7 +333,7 @@ test('live replication with an additional base', async t => {
   t.end()
 })
 
-test('namespaced corestores use separate default keys', async t => {
+test('namespaced basestores use separate default keys', async t => {
   const store1 = await create(ram)
   const store2 = store1.namespace('store2')
   const store3 = store1.namespace('store3')
@@ -349,7 +349,7 @@ test('namespaced corestores use separate default keys', async t => {
   t.end()
 })
 
-test('namespaced corestores will not increment reference multiple times', async t => {
+test('namespaced basestores will not increment reference multiple times', async t => {
   const store1 = await create(ram)
   const store2 = store1.namespace('store2')
   const store3 = store1.namespace('store3')
@@ -373,7 +373,7 @@ test('namespaced corestores will not increment reference multiple times', async 
   t.end()
 })
 
-test('namespaced corestores can be nested', async t => {
+test('namespaced basestores can be nested', async t => {
   const store1 = await create(ram)
   const store2 = store1.namespace('store2')
   const store1a = store1.namespace('a')

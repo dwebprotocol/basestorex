@@ -23,7 +23,7 @@ const store = new Basestore(ram)
 await store.ready()
 ```
 
-dDatabases can be generated with both the `get` and `default` methods. If the first writable base is created with `default`, it will be used for storage bootstrapping. We can always reload this bootstrapping base off disk without your having to store its public key externally. Keys for other hypercores should either be stored externally, or referenced from within the default base:
+dDatabases can be generated with both the `get` and `default` methods. If the first writable base is created with `default`, it will be used for storage bootstrapping. We can always reload this bootstrapping base off disk without your having to store its public key externally. Keys for other ddatabases should either be stored externally, or referenced from within the default base:
 ```js
 const base1 = store1.default()
 ```
